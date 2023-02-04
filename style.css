@@ -1,0 +1,8 @@
+.navbar-custom{
+    background-color: rgb(136, 209, 209);
+    font-size: large;
+    text-decoration: underline;
+}
+.navbar-custom li:hover{
+    text-transform:uppercase;
+}
