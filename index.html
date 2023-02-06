@@ -3,42 +3,87 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Learn Sphere</title>
     <link rel="stylesheet" href="/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
   <body>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <div class="navbar-custom">
-        <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand bg-warning" href="#">HUB</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              
-              <div class="collapse navbar-collapse" id="navbarCollapse">
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <div class="container">
 
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="">Courses</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black opacity-50" href="">Login/SignUp</a>
-                    </li>
-                    
-                </ul>
-              </div>
-              
+        <!-- navbar brand logo -->
+        <a href="#" class="navbar-brand" >Learn <span class="text-info">Sphere</span></a>
 
-        </nav>
-    </div>
+        <!-- //collapse button -->
+        <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navmenu">
+        <!-- Menu -->
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#courses" class="nav-link">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a href="#pricing" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Instructors</a>
+            </li>
+            <li class="nav-item">
+              <a href="#login" class="nav-link">Login</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <!-- BANNER -->
+    <section class="bg-dark text-center text-light p-5">
+      <div class="container">
+        <!-- making d-flex class to align text and image horizontally -->
+        <div class="d-sm-flex">
+          <div> 
+            <h1><span class="text-warning">Upskill</span> Yourself with <span class="text-info">Sphere</span></h1>
+            <p class="lead">
+              Welcome to Learn <span class="text-info">Sphere</span>, an initiative to produce skilled <span class="text-warning">coders</span> and <span class="text-warning">developers</span>
+              Everything you need, in one <span class="text-primary">streamlined platform</span>
+              The ultimate resource to prepare for <span class="text-warning">coding</span> and <span class="text-warning">development</span> interviews.
+              <span class="text-success">550+ Hours of Video Explanations with doubt assistance.</span> 
+            </p>
+           <button class="btn btn-primary">Explore Courses</button>
+          </div>
+          <img class="img-fluid w-50" src="/Images/showcase.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter ya free webinar ya kuch bhi ek section me -->
+    <section class="bg-primary text-light p-4">
+      <div class="container">
+        <div class="d-md-flex">
+          <h2>Register for our next Webinar</h2>
+        </div>
+        <div class="input-group">
+          <input
+           type="text" 
+           class="form-control" 
+           placeholder="Enter your Email">
+          <button class="btn btn-dark"
+           type="button" >Enroll</button>
+        </div>
+      </div>
+
+    </section>
+    
+
+    
 
   </body>
 </html>
