@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
   <body>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <!-- NAV BAR -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="header">
       <div class="container">
 
         <!-- navbar brand logo -->
-        <a href="#" class="navbar-brand" >Learn <span class="text-info">Sphere</span></a>
+        <a href="#header" class="navbar-brand " >Learn <span class="text-info">Sphere</span></a>
 
         <!-- //collapse button -->
         <button 
@@ -26,6 +28,7 @@
         <!-- Menu -->
         <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -57,7 +60,7 @@
               The ultimate resource to prepare for <span class="text-warning">coding</span> and <span class="text-warning">development</span> interviews.
               <span class="text-success">550+ Hours of Video Explanations with doubt assistance.</span> 
             </p>
-           <button class="btn btn-primary">Explore Courses</button>
+           <a href="#courses" class="btn btn-primary border-warning">Explore courses</a>
           </div>
           <img class="img-fluid w-50" src="/Images/showcase.svg" alt="">
         </div>
@@ -65,25 +68,68 @@
     </section>
 
     <!-- Newsletter ya free webinar ya kuch bhi ek section me -->
-    <section class="bg-primary text-light p-4">
-      <div class="container">
-        <div class="d-md-flex">
-          <h2>Register for our next Webinar</h2>
+    <div class="webinar">
+      <section class="text-light p-4">
+
+        <div class="container">
+          <div class="d-md-flex">
+            <h2>Register for our next Webinar</h2>
+          </div>
+          <div class="input-group">
+            <input
+             type="text" 
+             class="form-control" 
+             placeholder="Enter your Email">
+            <button class="btn btn-dark"
+             type="button" >Register</button>
+          </div>
         </div>
-        <div class="input-group">
-          <input
-           type="text" 
-           class="form-control" 
-           placeholder="Enter your Email">
-          <button class="btn btn-dark"
-           type="button" >Enroll</button>
+      </section>
+    </div>
+
+    <!-- Boxes for courses(grids in bootstrap) -->
+    <section class="p-5 pt-1 bg-dark" id="courses">
+      
+      <div class="container-courses">
+        <div class="h3 bg-dark text-light text-center">
+          Learn Programming Languages 
+        </div>
+        <div class="row text-center">
+          <!-- col-md means it will align in a stack in a mobile screen not side by side like in big screen -->
+          <div class="col-md">
+            <!-- copied card cntent from bootstrap -->
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="/Images/c++.png" alt="C++ dsa">
+              <div class="card-body bg-dark text-light">
+                <h5 class="card-title bg-dark text-warning">Data Structures and algorithms in C++</h5>
+                <p class="card-text bg">DSA for Computer Science Students & for Cracking the Coding Interview. ⚡ Animated Examples for Deeper Understanding.</p>
+                <a href="#" class="btn btn-info border-warning">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md"></div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/Images/java.png" alt="Java bootcamp">
+            <div class="card-body bg-dark text-light">
+              <h5 class="card-title text-warning font-weight-bold">Complete Java Bootcamp: Zero to Hero</h5>
+              <p class="card-text">Become an Experienced Java Developer with Just One Course. Fully Updated with 100+ Coding Challenges!</p>
+              <a href="#" class="btn btn-info border-warning">Buy Now</a>
+            </div>
+          </div>
+          <div class="col-md"></div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/Images/python.png" alt="Python">
+            <div class="card-body bg-dark text-light">
+              <h5 class="card-title text-warning">Master Python for Data and Machine Learning</h5>
+              <p class="card-text">Use Python for Data Science and Machine LearningLearn how to use NumPy, Pandas, Machine Learning and more!.</p>
+              <a href="#" class="btn btn-info border-warning">Buy Now</a>
+            </div>
+          </div>
         </div>
       </div>
-
     </section>
     
 
     
-
   </body>
 </html>
