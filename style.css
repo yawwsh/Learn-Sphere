@@ -5,6 +5,7 @@
      transform: scale(1.05);
      box-shadow: 0 10px 20px black;
      transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+     font-style: oblique;
 }
 .why{
     background: #F5EDCE;
@@ -15,3 +16,10 @@
 .why:hover{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.testimonials:hover{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.pricing:hover{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
