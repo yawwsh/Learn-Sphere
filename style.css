@@ -6,3 +6,12 @@
      box-shadow: 0 10px 20px black;
      transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.why{
+    background: #F5EDCE;
+}
+.why img:hover{
+    border:solid 1mm black;
+}
+.why:hover{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
