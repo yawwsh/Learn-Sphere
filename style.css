@@ -22,4 +22,10 @@
 .pricing:hover{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
+/* .containerFAQ{
+    background-color: #8bb3c1;
+} */
+.containerFAQ:hover{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+}
