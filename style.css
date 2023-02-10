@@ -39,7 +39,17 @@
 .foot{
     font-family:cursive;
 }
+.foot img:hover{
+    border:0.5mm solid white;
+}
 .yash{
     width: 200px;
     height: 200px;
+}
+.name:hover{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+.courses{
+    background-color:white;
 }
